@@ -1,3 +1,15 @@
-body{
-    background-color: blue;
+.nav {
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: red;
+box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
 }
