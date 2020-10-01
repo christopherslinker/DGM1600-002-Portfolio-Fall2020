@@ -1,4 +1,8 @@
-
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
 
 
 body{
@@ -76,6 +80,7 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
@@ -90,7 +95,33 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     color: cadetblue;
     padding: 20px;
 }
+/* END OF WELCOME SECTION */
 
+/* START OF PROJECTS SECTION */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid{
+      grid-template-columns: 1fr;
+  }
+
+  .project-image {
+    height: 500px;
+    object-fit: cover;
+  }
+  
 
 .projects-section{
 padding: 50px;
@@ -104,27 +135,47 @@ background: cadetblue;
     color: white;
 }
 
-.contact-section{
-    display:flex;
-    justify-content: center;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
+/* END OF PROJECTS SECTION */
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+/* START OF CONTACT SECTION */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+    height: 80vh;
+    padding: 0 2rem;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   }
 
-.project-image{
-    size: 10px;
+.contact-section-header{
+    color: white;
 }
 
-figure > img{
-    max-width: 200px;
-    max-height: 200px;
+.contact-section-header > h2{
+color: cadetblue;
+font-style: italic;
 }
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
+  
+.contact-links{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
