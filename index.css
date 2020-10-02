@@ -1,4 +1,7 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 
 @media (max-width: 75em) {
@@ -70,13 +73,6 @@ background-color: cadetblue;
 box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
-
-.welcome-section{
-    display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-}
-
 .welcome-section{
     display: flex;
     flex-direction: column;
@@ -105,20 +101,26 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 3rem;
     width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
     margin-bottom: 6rem;
   }
 
-  .projects-section {
-    padding: 6rem 1rem;
-  }
 
   .project-image {
-    height: 500px;
-    object-fit: cover;
+    height: 250px;
+    padding-top: 80px;
+  }
+
+  figcaption {
+    background-color: rgb(35, 38, 39);
+    color: #ccc;
+    max-width: 364px;
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    list-style: none;
+    top: -10px;
   }
   
 
