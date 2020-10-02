@@ -12,7 +12,7 @@
 
 
 body{
-    background-color: LemonChiffon;
+    background-color: white;
 }
 
 h1, h2{
@@ -104,7 +104,7 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 3rem;
     width: 100%;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 
 
@@ -120,13 +120,12 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     position: relative;
     font-size: 3rem;
     text-align: center;
-    list-style: none;
     top: -10px;
   }
   
 
 .projects-section{
-padding: 50px;
+padding: 35px;
 background: cadetblue;
 }
 
@@ -142,13 +141,10 @@ background: cadetblue;
 /* START OF CONTACT SECTION */
 .contact-section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 100%;
     height: 80vh;
-    padding: 0 2rem;
     background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   }
 
@@ -159,11 +155,11 @@ background: cadetblue;
 .contact-section-header > h2{
 color: cadetblue;
 font-style: italic;
+padding-top: 2rem;
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
+    padding: 5rem 3rem;
     border-radius: 2px;
   }
   
@@ -176,8 +172,17 @@ font-style: italic;
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
+    text-decoration: none;
   }
   
   .contact-details:hover {
     transform: translateY(8px);
+  }
+
+  a:link{
+    color: white;
+  }
+
+  a:visited{
+    color: white;
   }
