@@ -5,23 +5,15 @@ import { people } from './data/people.js'
 
 const main = document.querySelector('main')
 
-/*
-films.forEach(film => {
-    console.log(film.title)
-    let newTitle = main.appendChild(document.createElement('h1'))
-    newTitle.textContent = film.title
-})
-*/
+for (let i = 0; i < 7; i++){
+    let figure = document.createElement('figure')
+    let figImg = document.createElement('img')
+    figImg.src = 'https://starwars-visualguide.com/assets/img/films/' + (i + 1) + '.jpg'
+    let figCaption = document.createElement('figcaption')
+    figCaption.textContent = 'Movie Title Here'
 
-/*
-people.forEach(person => {
-console.log(people.name)
-let personImg = document.createElement('img')
-personImg.src = "https://i.imgur.com/P3kT4Te.jpg"
-main.appendChild(personImg)
-})
-*/
+    figure.appendChild(figImg)
+    figure.appendChild(figCaption)
 
-for (let i = 0; i < 7; i++) {
-    console.log(films[i].title)
+    main.appendChild(figure)
 }
