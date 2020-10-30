@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+/*  NAVBAR START */
+
 .startourssmall-png{
     display: flex;
     justify-content: left;
@@ -13,8 +15,9 @@
 #navbar{
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(95, 118, 160);
+    background-color: black;
     z-index: 10;
+    font-family: 'Roboto' , sans-serif;
 }
 
 .nav-list {
@@ -42,7 +45,6 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
-background-color: cadetblue;
 box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -51,8 +53,12 @@ body{
     background-image: url("/StarToursAPI/PhotoRefs/GalaxyBackground.jpg")
 }
 
+/*  END OF NAVBAR  */
+/*  START OF ABOUT SECTION  */
+
 .startours-png{
-    height: 600px;
+    height: 550px;
+    margin-top: 140px;
 }
 
 .about{
@@ -72,11 +78,33 @@ main{
     justify-content: center;
 }
 
-figure{
-    margin: 1rem;
+h1{
+    color: yellow;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-family: 'Roboto' , sans-serif;
 }
 
-figcaption{
-    text-align: center;
-    background-color: red;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:link{
+    color: white;
+  }
+
+  a:visited{
+    color: white;
+  }
