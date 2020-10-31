@@ -5,11 +5,6 @@
 
 /*  NAVBAR START */
 
-.startourssmall-png{
-    display: flex;
-    justify-content: left;
-    height: 70px;
-}
 
 
 #navbar{
@@ -48,6 +43,11 @@ width: 100%;
 box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
+.startourssmall-png{
+    height: 70px;
+    justify-content: flex-start;
+}
+
 
 body{
     background-image: url("/StarToursAPI/PhotoRefs/GalaxyBackground.jpg")
@@ -58,7 +58,7 @@ body{
 
 .startours-png{
     height: 550px;
-    margin-top: 140px;
+    margin-top: 170px;
 }
 
 .about{
@@ -82,7 +82,7 @@ h1{
     color: yellow;
     display: flex;
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     font-size: 60px;
     font-family: 'Roboto' , sans-serif;
 }
@@ -91,11 +91,41 @@ h1{
 /* END OF ABOUT SECTION */
 /* START OF TRAVEL INFO */
 
+
 .travel-info{
+    background-color: rgb(53, 53, 53);
+    padding: 35px;
+}
+
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .travel-grid img{
+      height: 200px;
+      border-radius: 5%;
+  }
+
+
+
+  .travel-header{
     display: flex;
     justify-content: center;
-    background-color: rgb(53, 53, 53);
 }
+
+figcaption {
+    background-color: rgb(20, 20, 20);
+    color: #ccc;
+    max-width: 400px;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+    top: -10px;
+  }
 
 
 
