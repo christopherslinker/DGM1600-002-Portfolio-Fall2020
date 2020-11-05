@@ -29,7 +29,7 @@
   }
 
   .nav-list a:hover {
-background-color: lightblue;
+background-color: rgba(173, 216, 230, 0.623);
   }
 
 
@@ -93,7 +93,7 @@ h1{
 
 
 .travel-info{
-    background-color: rgb(53, 53, 53);
+    background-image: linear-gradient( #161718 0%, #000000ef 100%);
     padding: 35px;
 }
 
@@ -118,8 +118,8 @@ h1{
 }
 
 figcaption {
-    background-color: rgb(20, 20, 20);
-    color: #ccc;
+    background-color: rgb(70, 67, 83);
+    color: rgb(243, 243, 243);
     max-width: 400px;
     position: relative;
     font-size: 2rem;
@@ -127,16 +127,18 @@ figcaption {
     top: -10px;
   }
 
-.planets-header{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+
+.travel-buttons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-
-
-
-
+.travel-buttons-img{
+    height: 200px;
+    border-radius: 5%;
+}
 
 
 
