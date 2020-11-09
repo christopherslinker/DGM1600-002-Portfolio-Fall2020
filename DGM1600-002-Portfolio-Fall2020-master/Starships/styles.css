@@ -1,0 +1,26 @@
+:root {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/StarToursAPI/PhotoRefs/GalaxyBackground.jpg);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    color: yellow;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto' , sans-serif;
+}
+
+li {
+    list-style-type: none;
+}

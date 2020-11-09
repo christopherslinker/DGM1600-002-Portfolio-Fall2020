@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/StarToursAPI/PhotoRefs/GalaxyBackground.jpg);
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.header{
+    font-family: 'Robo' , sans-serif;
+    color: yellow;
+    font-size: 80px;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+button{
+    font-size: 30px;
+    color: rgb(223, 237, 238);
+    background-color: rgb(63, 58, 87);
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure img {
+    max-height: 15rem;
+    padding: 8px;
+}
+
+figcaption{
+    color: yellow;
+    background-color: rgb(66, 0, 189);
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
