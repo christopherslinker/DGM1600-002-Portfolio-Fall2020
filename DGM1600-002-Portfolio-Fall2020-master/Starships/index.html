@@ -4,13 +4,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css"/>
-    <title>Star Wars Starships</title>
+    <title>Starships</title>
 </head>
 <body>
     <header>
         <h1 id="starships-header" class="starships-header">Starships</h1>
-        <p id="starships-header-par" class="starships-header-par"> This is a list of some of the most iconic Starships throughout the entire galaxy. Click their names to learn what they look like. </p>
+        <p id="starships-header-par" class="starships-header-par"> Here is a list of for your Starship watching while on your tour. Just click the name of the Starship to see a picture of it!</p>
     </header>
     <div class="container">
         <nav class="nav">
@@ -18,7 +19,15 @@
         </nav>
         <main class="main"></main>
     </div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <h1 class="message"> This ship is currently under Empire remodeling </h1>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
     <footer>
+        <p id="startours-footer-par" class="startours-footer-par"> Star Tours Travel Co. </p>
     </footer>
     <script src="main.js" type="module"></script>
 </body>

@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Planets</title>
 </head>
 <body>
-    THIS IS THE PLANETS PAGE
+    <header>
+        <h1 id="planets-header" class="planets-header">Planets</h1>
+        <p id="planets-header-par" class="planets-header-par"> This is a list of planets Startours travels to. Click the name of the planets to get take a look!</p>
+    </header>
+    <div class="container">
+        <nav class="nav">
+            <ul class="navList"></ul>
+        </nav>
+        <main class="main"></main>
+    </div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <h1 class="message"> Whoops! This planet isn't showing up on our galactic map! </h1>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <footer>
+        <p id="startours-footer-par" class="startours-footer-par"> Star Tours Travel Co. </p>
+    </footer>
+    <script src="main.js" type="module"></script>
 </body>
-
-<main>
-</main>
-<script src="main.js" type="module"></script>
 </html>

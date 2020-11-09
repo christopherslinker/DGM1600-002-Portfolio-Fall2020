@@ -1,0 +1,79 @@
+:root {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("/StarToursAPI/PhotoRefs/GalaxyBackground.jpg")
+}
+
+.container {
+    display: flex;
+}
+
+.main {
+    margin: 8rem 5rem 0 10rem;
+}
+
+.planets-header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 150px;
+    color: yellow;
+}
+
+.planets-header-par{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 204, 255);
+    padding: 20px;
+}
+
+.planets-header-par{
+    display: block;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Roboto' , sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    display: block;
+    background-color: rgb(133, 110, 146);
+    border-style: solid;
+    border-color: rgb(0, 204, 255)
+}
+
+li {
+    list-style-type: none;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.modal{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 100px;
+}
+
+.modal-background{
+    background-image: url("/StarToursAPI/PhotoRefs/EmpireLogoPNG.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
