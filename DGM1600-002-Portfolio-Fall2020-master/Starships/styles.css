@@ -7,18 +7,36 @@ body{
     background-image: url(/StarToursAPI/PhotoRefs/GalaxyBackground.jpg);
 }
 
-header{
+.starships-header{
+    display:flex;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 150px;
+    color: yellow;
+}
+
+.starships-header-par{
     display: flex;
     justify-content: center;
     font-family: 'Roboto' , sans-serif;
-    color: yellow;
+    color: rgb(0, 204, 255);
     font-size: 50px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Roboto' , sans-serif;
+    font-size: 30px;
+    padding: 10px;
+}
+
+a {
+    display: block;
+    background-color: rgb(62, 53, 71);
+    border: solid rgb(0, 204, 255);
+    max-width: 350px;
 }
 
 li {

@@ -1,3 +1,4 @@
+
 import { starships } from '../data/starships.js'
 
 const nav = document.querySelector('.nav')

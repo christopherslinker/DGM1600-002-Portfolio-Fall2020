@@ -47,7 +47,7 @@ function populateDOM(characters) {
         const charImg = document.createElement('img')
         let charNum = getLastNumber(element.url)
         charImg.src = `https://starwars-visualguide.com/assets/img/characters/${charNum}.jpg`
-        charImg.addEventListener('error', () => charImg.hidden = true) // genius level
+        charImg.addEventListener('error', () => charImg.hidden = true) // BIG BRAIN MOVES
         const charCaption = document.createElement('figcaption')
         charCaption.textContent = element.name
     
