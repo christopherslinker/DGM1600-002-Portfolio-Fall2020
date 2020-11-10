@@ -68,12 +68,17 @@ footer {
 
 .message {
     font-family: 'Roboto' , sans-serif;
-    font-size: 100px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0);
 }
+
 
 .modal-background {
     background-image: url("/StarToursAPI/PhotoRefs/EmpireLogoPNG.png");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.5;
 }

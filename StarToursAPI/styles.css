@@ -29,15 +29,19 @@ background-color: rgba(173, 216, 230, 0.623);
 .nav {
 display: flex;
 justify-content: space-between;
+background-color: black;
 position: fixed;
 top: 0;
 left: 0;
 width: 100%;
 box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+z-index: 10;
+font-family: 'Roboto' , sans-serif;
 }
 
 .startourssmall-png{
     height: 70px;
+    margin-left: 50px;
 }
 
 
