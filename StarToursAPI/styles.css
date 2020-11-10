@@ -177,7 +177,11 @@ p{
     justify-content: center;
 }
 
-
+.booking-link{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
 
 
 
