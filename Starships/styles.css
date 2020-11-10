@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url("/StarToursAPI/PhotoRefs/GalaxyBackground.jpg")
 }
 
@@ -15,7 +15,7 @@ body{
     margin: 8rem 5rem 0 10rem;
 }
 
-.starships-header{
+.starships-header {
     display: flex;
     justify-content: center;
     font-family: 'Roboto' , sans-serif;
@@ -23,7 +23,7 @@ body{
     color: yellow;
 }
 
-.starships-header-par{
+.starships-header-par {
     display: flex;
     justify-content: center;
     font-family: 'Roboto' , sans-serif;
@@ -33,7 +33,7 @@ body{
     padding: 20px;
 }
 
-.starships-header-par{
+.starships-header-par {
     display: block;
     background-color: black;
 }
@@ -57,7 +57,7 @@ li {
 }
 
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     font-family: 'Roboto' , sans-serif;
@@ -66,12 +66,12 @@ footer{
     padding: 30px;
 }
 
-.modal{
+.message {
     font-family: 'Roboto' , sans-serif;
     font-size: 100px;
 }
 
-.modal-background{
+.modal-background {
     background-image: url("/StarToursAPI/PhotoRefs/EmpireLogoPNG.png");
     height: 100%;
     background-position: center;

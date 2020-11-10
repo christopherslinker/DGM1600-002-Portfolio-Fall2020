@@ -7,13 +7,6 @@
 
 
 
-#navbar{
-    display: flex;
-    justify-content: flex-end;
-    background-color: black;
-    z-index: 10;
-    font-family: 'Roboto' , sans-serif;
-}
 
 .nav-list {
     display: flex;
@@ -35,7 +28,7 @@ background-color: rgba(173, 216, 230, 0.623);
 
 .nav {
 display: flex;
-justify-content: flex-end;
+justify-content: space-between;
 position: fixed;
 top: 0;
 left: 0;
@@ -45,7 +38,6 @@ box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 
 .startourssmall-png{
     height: 70px;
-    justify-content: flex-start;
 }
 
 
