@@ -29,16 +29,23 @@ button{
     font-size: 30px;
     color: rgb(223, 237, 238);
     background-color: rgb(63, 58, 87);
+    border-radius: 4px;
 }
+
+button:hover{
+    background-color: rgb(178, 175, 209);
+}
+
 
 #main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 50px;
 }
 
 figure img {
-    max-height: 15rem;
+    max-height: 16rem;
     padding: 8px;
 }
 
@@ -48,5 +55,6 @@ figcaption{
     text-align: center;
     position: relative;
     top: -30px;
+    width: 184px;
 }
 
