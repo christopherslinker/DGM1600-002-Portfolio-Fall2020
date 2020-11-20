@@ -4,10 +4,18 @@
     box-sizing: border-box;
 }
 
+
+/* CHANGE JUST SOMETHING TO FILL FOR NOW */
+body{
+  background-image: url(/PokemonAPI/Photos/PokemonAPIbackground.png);
+  background-repeat: repeat;
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
 .pokemonGrid {
@@ -31,6 +39,10 @@ header {
   transform-style: preserve-3d;
     cursor: pointer;
     /* position: relative; */
+  }
+
+  .card {
+    background-color: cyan;
   }
 
   .card.is-flipped {
