@@ -22,6 +22,37 @@ function loadPage() {
 }
 
 const pokeGrid = document.querySelector('.pokemonGrid')
+const loadButton = document.querySelector('.load')
+const newPokemonButton = document.querySelector('.newPokemon')
+
+newPokemonButton.addEventListener('click', () => {
+    let pokeName = prompt ('What is your new Pokemon name?')
+    let newPokemon = new Pokemon(pokeName, 400, 200, ['gorge', 'sleep'])
+    console.log(newPokemon)
+})
+//This will let us look up Pokemon by their height and their weight and make new instances
+
+loadButton.addEventListener('click', () => {
+    loadPage()
+    //loadButton.hideen = true   this may be able to be deleted later. Hold onto for now.
+    loadButton.disabled = true
+})
+
+function populatePokeCard(singlePokemon) {
+    let pokeScene = document.createElement('div')
+    pokeScene.className = 'scene'
+    let pokeCard = document.createElement('div')
+    pokeCard.className = 'card'
+    pokeCard.addEventListener('click', function () {
+        pokeCard.classList.toggle('is-flipped')
+    })
+    pokeCard.appendChild(populeCardFront(singlePokemon))
+    pokeCard.appendChild(populateCardBack(singlePokemon))
+    pokeScene.appendChild(pokeCard)
+    pokeGrid.appendChild(pokeScene)
+}
+
+//PICK UP FROM HERE NEXT TIME!!!!!!!!
 
 function populatePokeCard(singlePokemon) {
     let pokeScene = document.createElement('div')
