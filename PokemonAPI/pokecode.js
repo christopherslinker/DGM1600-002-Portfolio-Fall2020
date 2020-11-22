@@ -52,44 +52,55 @@ function populatePokeCard(singlePokemon) {
     pokeGrid.appendChild(pokeScene)
 }
 
-//PICK UP FROM HERE NEXT TIME!!!!!!!!
 
-function populatePokeCard(singlePokemon) {
-    let pokeScene = document.createElement('div')
-    pokeScene.className = 'scene'
-    let pokeCard = document.createElement('div')
-    pokeCard.className = 'card'
-    pokeCard.addEventListener( 'click', function() {
-        pokeCard.classList.toggle('is-flipped')
-      })
+function populateCardFront(pokemon) {
     let pokeFront = document.createElement('div')
-    let pokeBack = document.createElement('div')
-
+    pokeFront.className = 'card_face card_face--front'
     let frontLabel = document.createElement('p')
-    frontLabel.textContent = singlePokemon.name
+    frontLabel.textContent = pokemon.name
     let frontImage = document.createElement('img')
-    frontImage.src = `../images/pokemon/${getImageFileName(singlePokemon)}.png`
-
-    let backLabel = document.createElement('p')
-    backLabel.textContent = `${singlePokemon.moves.length} moves`
-    pokeBack.appendChild(backLabel)
-
+    frontImage.src = `../images/pokemon/${getImageFileName(pokemon)}.png`
     pokeFront.appendChild(frontImage)
     pokeFront.appendChild(frontLabel)
-    pokeCard.appendChild(pokeFront)
-    pokeCard.appendChild(pokeBack)
-    pokeScene.appendChild(pokeCard)
-    pokeGrid.appendChild(pokeScene)
+    return pokeFront
+}
+
+function populateCardBack(pokemon) {
+    let pokeBack = document.createElement('div')
+    pokeBack.className = 'card__face card__face--back'
+    let backLabel = document.createElement('p')
+    backLabel.textContent = `${pokemon.moves.length} moves`
+    backLabel.addEventListener('click', () => getMovesDetails(pokemon.moves))
+    pokeBack.appendChild(backLabel)
+    return pokeBack
+  }
+
+  function getMovesDetails(pokemonMoves) {
+    const movesUrl = pokemonMoves[0].move.url
+    return getAPIData(movesUrl).then((data) => data.type.name)
 }
 
 function getImageFileName(pokemon) {
-    if (pokemon.id < 10) {
-        return `00${pokemon.id}`
-    } else if (pokemon.id > 9 && pokemon.id < 100) {
-        return `0${pokemon.id}`
-    }
+  if (pokemon.id < 10) {
+    return `00${pokemon.id}`
+  } else if (pokemon.id > 9 && pokemon.id < 100) {
+    return `0${pokemon.id}`
+  } else if (pokemon.id > 99 && pokemon.id < 810) {
+    return `${pokemon.id}`
+  }
+  return `pokeball`
+}
+
+function Pokemon(name, height, weight, abilities) {
+    this.name = name
+    this.height = height
+    this.weight = weight
+    this.abilities = abilities
+    this.id = 900
 }
 
 
 
-loadPage()
+
+
+

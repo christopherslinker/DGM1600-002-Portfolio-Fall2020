@@ -5,11 +5,7 @@
 }
 
 
-/* CHANGE JUST SOMETHING TO FILL FOR NOW */
-body{
-  background-image: url(/PokemonAPI/Photos/PokemonAPIbackground.png);
-  background-repeat: repeat;
-}
+
 
 header {
     display: flex;
