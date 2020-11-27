@@ -25,6 +25,7 @@ async function getAPIData(url) {
   
   const pokeGrid = document.querySelector('.pokemonGrid')
   const loadButton = document.querySelector('.load')
+  //newPokemonButton doesn't seem to work right yet. When I try to fix it I make break the loadButton too
   const newPokemonButton = document.querySelector('.newPokemon')
   
   newPokemonButton.addEventListener('click', () => {
