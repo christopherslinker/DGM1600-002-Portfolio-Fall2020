@@ -30,6 +30,8 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .scene {
@@ -58,6 +60,8 @@ header {
 
 .card__face--front {
   background: cyan;
+  /* If you get the time get this image below v working. Would be cool. */
+  /*background-image: url(/PokemonAPI/Photos/PokemonCardBlank.png);*/
 }
 
 .card__face--back {
