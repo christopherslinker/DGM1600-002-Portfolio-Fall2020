@@ -44,7 +44,7 @@ header {
 
 .scene {
   width: 200px;
-  height: 260px;
+  height: 284px;
   border: 1px solid #CCC;
   margin: 10px;
   perspective: 600px;
@@ -69,8 +69,12 @@ header {
 .card__face--front {
   background: rgb(153, 255, 255);
   /* If you get the time get this image below v working. Would be cool. */
-  /*background-image: url(/PokemonAPI/Photos/PokemonCardBlank.png);*/
+  background-image: url(/PokemonAPI/Photos/PokemonCardBlank.png);
   font-family: 'Seymour One', sans-serif;
+}
+
+.card__face--front , img{
+  z-index: 100;
 }
 
 
