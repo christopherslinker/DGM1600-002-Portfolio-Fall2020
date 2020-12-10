@@ -86,6 +86,10 @@ header {
   font-family: 'Seymour One', sans-serif;
 }
 
+.card__face--back , font{
+  justify-content: center;
+}
+
 .card.is-flipped {
   transform: rotateY(180deg);
 }
@@ -104,4 +108,5 @@ button{
 
 button:hover{
   background-color: rgb(162, 224, 224);
+  cursor: pointer;
 }
