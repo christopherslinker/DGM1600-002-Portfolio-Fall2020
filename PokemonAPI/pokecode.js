@@ -11,7 +11,6 @@ async function getAPIData(url) {
  
 function loadPage() {
   getAPIData(`https://pokeapi.co/api/v2/pokemon?limit=30`).then(
-    //?limit=25&offset=800
     async (data) => {
       for (const pokemon of data.results) {
         await getAPIData(pokemon.url).then((pokeData) => {
@@ -24,8 +23,13 @@ function loadPage() {
 
   const pokeGrid = document.querySelector('.pokemonGrid')
   const loadButton = document.querySelector('.load')
-  //newPokemonButton doesn't seem to work right yet. When I try to fix it I make break the loadButton too
   const newPokemonButton = document.querySelector('.newPokemon')
+  const sortyByWeight = document.querySelector('.pokeWeight')
+
+  sortyByWeight.addEventListener('click', () => {
+    weightSort()
+  })
+
 
 newPokemonButton.addEventListener('click', () => {
     let pokeName = prompt('What is your new Pokemon name?')
@@ -45,6 +49,7 @@ newPokemonButton.addEventListener('click', () => {
     loadButton.disabled = true
   })
   
+
   function populatePokeCard(singlePokemon) {
     let pokeScene = document.createElement('div')
     pokeScene.className = 'scene'
