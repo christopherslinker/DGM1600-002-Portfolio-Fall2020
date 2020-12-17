@@ -24,11 +24,6 @@ function loadPage() {
   const pokeGrid = document.querySelector('.pokemonGrid')
   const loadButton = document.querySelector('.load')
   const newPokemonButton = document.querySelector('.newPokemon')
-  const sortyByWeight = document.querySelector('.pokeWeight')
-
-  sortyByWeight.addEventListener('click', () => {
-    weightSort()
-  })
 
 
 newPokemonButton.addEventListener('click', () => {
